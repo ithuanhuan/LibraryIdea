@@ -14,8 +14,6 @@
     <style type="text/css">
         #para1{
             text-align:center;
-        //color:rgb(239,155,160);
-        //color:rgb(0,124,195);
             color:blue;
             font-style:italic;
             font-size:40px;
@@ -37,7 +35,7 @@
         }
         body{
             background-size: 100%;
-            background-image:url('img/bookph1.jpg');
+            background-image:url('/img/bookph1.jpg');
             background-repeat:no-repeat;
 
         }

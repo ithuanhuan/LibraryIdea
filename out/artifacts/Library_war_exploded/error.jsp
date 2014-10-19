@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: huanhuan
-  Date: 2014/10/13
-  Time: 19:14
+  Date: 2014/10/19
+  Time: 17:19
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -35,7 +35,7 @@
         }
         body{
             background-size: 100%;
-            background-image:url('/img/bookph1.jpg');
+            background-image:url('/img/bookph3.jpg');
             background-repeat:no-repeat;
 
         }
@@ -47,13 +47,7 @@
     </style>
 </head>
 <body>
-<p id="para1">欢迎来到山东理工大学图书馆</p>
-<form action="/servlet/mainDemo" method="post" align="center" class="margin">
+<p id="para1">对不起，您输入的用户名或密码错误，请重新输入^_^</p>
 
-    学号:<input class="big" type="text" name="user" value="" style="border-style:solid; border-color:blue"><br/>
-    密码:<input class="big" type="password" name="psw" value="" style="border-style:solid; border-color:blue"><br/>
-    <input type="reset" value="清除数据">
-    <input type="submit" value="提交数据">
-</form>
 </body>
 </html>

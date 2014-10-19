@@ -62,15 +62,16 @@ public class mainDemo extends HttpServlet {
 
         Library Me = new Library(request.getParameter("user"), request.getParameter("psw"));// 构造函数
         if (Me.Login() == false) {
-            System.out.println("对不起，用户名或密码错误，请查实！");
+            RequestDispatcher dispatcher = request.getRequestDispatcher("/error.jsp");
+            dispatcher.forward(request, response);
         } else {
             ArrayList<Book> books = Me.getBookList();
             request.setAttribute("books", books);
-
+            RequestDispatcher dispatcher = request.getRequestDispatcher("/mainDemojsp.jsp");
+            dispatcher.forward(request, response);
         }
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/mainDemojsp.jsp");
-        dispatcher.forward(request, response);
+
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
